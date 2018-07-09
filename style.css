@@ -1,10 +1,18 @@
 body {
     font-family: 'Varela Round', sans-serif;
+    width: auto;
+    margin: 0px;
+}
+
+.menu_bar {
+    width: 100%;
+    background-color: #333;
 }
 
 #menu {
     list-style: none;
     font-size: 0;
+    margin: auto;
 }
 
 #menu li {
