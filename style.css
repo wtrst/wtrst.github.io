@@ -4,7 +4,7 @@ body {
     margin: 0px;
 }
 
-.menu_bar {
+#menu_bar {
     width: 100%;
     background-color: #333;
 }
