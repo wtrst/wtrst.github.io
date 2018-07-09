@@ -1,0 +1,18 @@
+#menu {
+    list-style: none;
+    font-size: 0;
+}
+
+#menu li {
+    width: 140px;
+    text-align: center;
+    background-color: #333;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
