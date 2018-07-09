@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'saxMono';
-    src: local('saxMono'), url('saxmono.ttf');
+    font-family: 'saxmono';
+    src: local('saxmono'), url('saxmono.ttf');
 }
 
 #menu {
