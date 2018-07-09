@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'saxMono';
+    src: local('saxMono'), url('saxmono.ttf');
+}
+
 #menu {
     list-style: none;
     font-size: 0;
