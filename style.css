@@ -1,6 +1,5 @@
-@font-face {
-    font-family: 'saxmono';
-    src: local('saxmono'), url('saxmono.ttf');
+body {
+    font-family: 'Varela Round', sans-serif;
 }
 
 #menu {
