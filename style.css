@@ -12,11 +12,13 @@ body {
 #menu {
     list-style: none;
     font-size: 0;
-    margin: auto;
+    margin: 0px auto;
+    padding: 0px;
+    width: 100%
 }
 
 #menu li {
-    width: 140px;
+    width: 100%;
     text-align: center;
     background-color: #333;
     display: inline-block;
