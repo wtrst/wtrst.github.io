@@ -8,26 +8,26 @@
         display: none !important;
     }
     .box {
-        min-width: 650px !important;
+        min-width: 320px !important;
         min-height: auto !important;
     }
     .box_top {
-        min-width: 650px !important;
+        min-width: 320px !important;
         min-height: auto !important;
     }
     .box_content_about {
-        min-width: 650px !important;
+        min-width: 320px !important;
         min-height: auto !important;
     }
     .profile_img {
-        min-width: 20% !important;
+        min-width: 300px !important;
         min-height: auto !important;
     }
     .title {
         font-size: 10vw !important;
     }
     .text {
-        min-width: 500px !important;
+        min-width: 320px !important;
         min-height: auto !important;
     }
 }
