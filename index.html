@@ -1,29 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>WATARU SATO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <h1>Wataru's portfolio</h1>
-    <ul id="menu">
-        <li>
-            <a href="#">HOME</a>
-        </li>
-        <li>
-            <a href="#">ABOUT</a>
-        </li>
-        <li>
-            <a href="#">PORTFOLIO</a>
-        </li>
-        <li>
-            <a href="#">CONTACT</a>
-        </li>
-    </ul>
-    <p>I'm hosted with GitHub Pages.</p>
+    <div id="menu_bar">
+        <img src="image/logo.png" alt="LOGO" id="logo">
+        <ul id="menu">
+            <li>
+                <a href="#">HOME</a>
+            </li>
+            <li>
+                <a href="#">ABOUT</a>
+            </li>
+            <li>
+                <a href="#">WORKS</a>
+            </li>
+            <li>
+                <a href="#">CONTACT</a>
+            </li>
+        </ul>
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input">
+                <span></span>
+            </label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <div id="nav-content-text">
+                    <a href="#">HOME</a>
+                    <br>
+                </div>
+                <div id="nav-content-text">
+                    <a href="#">ABOUT</a>
+                    <br>
+                </div>
+                <div id="nav-content-text">
+                    <a href="#">WORKS</a>
+                    <br>
+                </div>
+                <div id="nav-content-text">
+                    <a href="#">CONTACT</a>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="box__area">
+        <div class="box_top top_img">
+            <p class="top_font">Hello, I'm a front-end developer</p>
+        </div>
+        <div class="box">
+            <div class="title">about</div>
+            <div class="box_content_about">
+                <div class="text">
+                    <p>
+                        I'm Wataru Sato and Japanese front-end developer based in Vancouver.
+                        <br>I had studied about science of imformation and media at Ryukoku University which is in Japan,
+                        <br>and It was the very first oppotunity that I've known a pleasure and a difficulty to code a program.
+                    </p>
+                    <br>
+                    <br>
+                    <p>
+                        I graduated from the University, I had worked at Japanese IT services company for almost 4 years.
+                        <br>I can't say that was a big company, but, that's why I was able to have several roles which are like
+                        <br>front-end developer, back-end developer and data analyst, then it provided me many great experiences.
+                    </p>
+                    <br>
+                    <br>
+                    <p> Now, I'm in Vancouver, Canada as a student at Cornerstone International Community College of Canada.
+                        <br>I like to meet new people and try new things and it was the biggest reason why I've studied abroad.
+                        <br>I hope to be able to work in new country, new language and with new wonderful people.
+                    </p>
+                </div>
+
+                <img src="image/profile.jpg" alt="profile" class="profile_img">
+            </div>
+        </div>
+
+
+        <div class="box">
+            <div class="title">work</div>
+            <p>bbb</p>
+        </div>
+        <div class="box">
+            <p>aaa</p>
+            <p>bbb</p>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
