@@ -8,15 +8,15 @@
         display: none !important;
     }
     .box {
-        min-width: 750px !important;
+        min-width: 650px !important;
         min-height: auto !important;
     }
     .box_top {
-        min-width: 750px !important;
+        min-width: 650px !important;
         min-height: auto !important;
     }
     .box_content_about {
-        min-width: 750px !important;
+        min-width: 650px !important;
         min-height: auto !important;
     }
     .profile_img {
@@ -27,7 +27,7 @@
         font-size: 10vw !important;
     }
     .text {
-        min-width: 680px !important;
+        min-width: 500px !important;
         min-height: auto !important;
     }
 }
