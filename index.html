@@ -6,6 +6,7 @@
     <title>WATARU SATO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scrollreveal.min.js"></script>
 </head>
 
 <body>
@@ -52,50 +53,66 @@
             </div>
         </div>
     </div>
-    <div class="box__area">
-        <div class="box_top top_img">
-            <p class="top_font">Hello, I'm a front-end developer</p>
-        </div>
-        <div class="box">
-            <div class="title">about</div>
-            <div class="box_content_about">
-                <div class="text">
-                    <p>
-                        I'm Wataru Sato and Japanese front-end developer based in Vancouver.
-                        <br>I had studied about science of imformation and media at Ryukoku University which is in Japan,
-                        <br>and It was the very first oppotunity that I've known a pleasure and a difficulty to code a program.
-                    </p>
-                    <br>
-                    <br>
-                    <p>
-                        I graduated from the University, I had worked at Japanese IT services company for almost 4 years.
-                        <br>I can't say that was a big company, but, that's why I was able to have several roles which are like
-                        <br>front-end developer, back-end developer and data analyst, then it provided me many great experiences.
-                    </p>
-                    <br>
-                    <br>
-                    <p> Now, I'm in Vancouver, Canada as a student at Cornerstone International Community College of Canada.
-                        <br>I like to meet new people and try new things and it was the biggest reason why I've studied abroad.
-                        <br>I hope to be able to work in new country, new language and with new wonderful people.
-                    </p>
-                </div>
-
-                <img src="image/profile.jpg" alt="profile" class="profile_img">
+    <div class="box_top top_img">
+        <h1>Hello, I'm a front-end developer</h1>
+    </div>
+    <div>
+        <h2>about</h2>
+        <div>
+            <div>
+                <p>
+                    I'm Wataru Sato and Japanese front-end developer based in Vancouver.
+                    <br>I had studied about science of imformation and media at Ryukoku University which is in Japan,
+                    <br>and It was the very first oppotunity that I've known a pleasure and a difficulty to code a program.
+                </p>
+                <p>
+                    I graduated from the University, I had worked at Japanese IT services company for almost 4 years.
+                    <br>I can't say that was a big company, but, that's why I was able to have several roles which are like
+                    <br>front-end developer, back-end developer and data analyst, then it provided me many great experiences.
+                </p>
+                <p> Now, I'm in Vancouver, Canada as a student at Cornerstone International Community College of Canada.
+                    <br>I like to meet new people and try new things and it was the biggest reason why I've studied abroad.
+                    <br>I hope to be able to work in new country, new language and with new wonderful people.
+                </p>
             </div>
-        </div>
 
+            <div class="center">
+                <img src="image/profile.jpg" alt="profile" class="profile_img animate">
+            </div>
 
-        <div class="box">
-            <div class="title">work</div>
-            <p>bbb</p>
-        </div>
-        <div class="box">
-            <p>aaa</p>
-            <p>bbb</p>
         </div>
     </div>
 
 
+    <div>
+        <h2>work</h2>
+        <h3>Japan</h3>
+        <p onclick="alert();">aaaaa</p>
+        <div class="modal">
+            <input id="modal-trigger" type="checkbox">
+            <label for="modal-trigger">Launch Modal</label>
+            <div class="modal-overlay">
+                <div class="modal-wrap">
+                    <label for="modal-trigger">✖</label>
+                    <h4>ポップアップ・ウィンドウ・タイトル</h4>
+                    <p>コンテンツ</p>
+                </div>
+            </div>
+        </div>
+
+        <h3>Canada</h3>
+        <p>bbb</p>
+    </div>
+    <div>
+        <h2>contact</h2>
+        <p>aaa</p>
+        <p>bbb</p>
+    </div>
+    <script type="text/javascript">
+        window.sr = ScrollReveal();
+        sr.reveal('.animate');
+    </script>
 </body>
+
 
 </html>

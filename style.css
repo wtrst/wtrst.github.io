@@ -12,23 +12,20 @@
         min-height: auto !important;
     }
     .box_top {
-        min-width: 320px !important;
-        min-height: auto !important;
+        min-width: 100vw !important;
+        min-height: 100vh !important;
     }
-    .box_content_about {
+    /* .box_content_about {
         min-width: 320px !important;
         min-height: auto !important;
     }
     .profile_img {
         min-width: 300px !important;
         min-height: auto !important;
-    }
-    .title {
-        font-size: 10vw !important;
-    }
-    .text {
-        min-width: 320px !important;
-        min-height: auto !important;
+        margin: 30px auto !important;
+    } */
+    p {
+        width: 90% !important;
     }
 }
 
@@ -38,26 +35,48 @@
     }
 }
 
-body {
+@font-face {
+    font-family: 'Varera Round';
+    src: url(font/VarelaRound-Regular.ttf);
+    font-family: 'Codystar';
+    src: url(font/Codystar-Regular.ttf);
+}
+
+html {
     font-family: 'Varela Round', sans-serif;
-    width: auto;
+}
+
+body {
+    width: 100%;
     margin: 0px;
-    /* 画像ファイルの指定 */
-    /* background-image: url(top.jpg); */
-    /* 画像を常に天地左右の中央に配置 */
-    /* background-position: center center; */
-    /* 画像をタイル状に繰り返し表示しない */
-    /* background-repeat: no-repeat; */
-    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
-    /* background-attachment: fixed; */
-    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
-    /* background-size: cover; */
-    /* 背景画像が読み込まれる前に表示される背景のカラー */
-    /* background-color: #464646; */
+    background-color: #141611
+}
+
+h1 {
+    font-family: 'Codystar', cursive;
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Codystar', cursive;
+    font-size: 42px;
+    color: #fff;
+    text-align: center;
+}
+
+h3 {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
 }
 
 p {
-    margin: 0px
+    margin: 40px auto;
+    color: #fff;
+    font-size: 16px;
+    width: 40%;
 }
 
 a {
@@ -106,16 +125,6 @@ a {
     background-image: url(image/top.jpg);
     background-size: cover;
     background-position: center;
-}
-
-.top_font {
-    /* font-family: 'Shadows Into Light', cursive; */
-    /* font-family: 'Covered By Your Grace', cursive; */
-    /* font-family: 'Monoton', cursive; */
-    /* font-family: 'Alfa Slab One', cursive; */
-    font-family: 'Codystar', cursive;
-    font-size: 5vw;
-    color: #fff;
 }
 
 .box {
@@ -168,7 +177,7 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-    align-items: start !important;
+    align-items: center !important;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -179,36 +188,12 @@ a {
     flex-wrap: wrap-reverse !important;
 }
 
-.box__area {
-    height: 100vh;
-    overflow-y: auto;
-    /* スクロールのスナップ位置を100vhごとに設定 */
-    -webkit-scroll-snap-points-y: repeat(100vh);
-    -ms-scroll-snap-points-y: repeat(100vh);
-    scroll-snap-points-y: repeat(100vh);
-    /* スナップ位置に強制的にスクロール */
-    -webkit-scroll-snap-type: mandatory;
-    -ms-scroll-snap-type: mandatory;
-    scroll-snap-type: mandatory;
+.center {
+    text-align: center;
 }
 
 .profile_img {
-    width: 30vw;
-    height: 30vh;
-    margin: 0 auto;
-}
-
-.title {
-    font-family: 'Codystar', cursive;
-    font-size: 5vw;
-    margin: 5vh 0;
-}
-
-.text {
-    font-size: 18px;
-    margin: 0 auto;
-    max-width: 35vw;
-    max-height: 35vh
+    width: 40%;
 }
 
 #nav-drawer {
@@ -317,4 +302,65 @@ a {
     transform: translateX(0%);
     /*中身を表示（右へスライド）*/
     box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
+}
+
+.modal>label {
+    background: #FFD300;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.modal-overlay {
+    background: #000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.modal-wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.modal-wrap label {
+    background: #FFD300;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+}
+
+input {
+    position: absolute;
+    z-index: -9999;
+    visibility: hidden;
+}
+
+.modal-overlay {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: all 0.75s cubic-bezier(0.65, -0.55, 0.265, 1.55);
+    -moz-transition: all 0.75s cubic-bezier(0.65, -0.55, 0.265, 1.55);
+    -ms-transition: all 0.75s cubic-bezier(0.65, -0.55, 0.265, 1.55);
+    -o-transition: all 0.75s cubic-bezier(0.65, -0.55, 0.265, 1.55);
+    transition: all 0.75s cubic-bezier(0.65, -0.55, 0.265, 1.55);
+    z-index: -999;
+}
+
+input:checked~.modal-overlay {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    z-index: 999;
 }
