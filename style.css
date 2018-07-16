@@ -37,9 +37,9 @@
 
 @font-face {
     font-family: 'Varera Round';
-    src: local('Varera Round'), url(https://fonts.googleapis.com/css?family=Varela+Round) format('truetype');
+    /* src: local('Varera Round'), url(https://fonts.googleapis.com/css?family=Varela+Round) format('truetype'); */
     font-family: 'Codystar';
-    src: local('Codystar'), url(https://fonts.googleapis.com/css?family=Codystar) format('truetype');
+    /* src: local('Codystar'), url(https://fonts.googleapis.com/css?family=Codystar) format('truetype'); */
 }
 
 html {
