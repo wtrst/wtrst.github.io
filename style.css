@@ -33,13 +33,22 @@
     #nav-open {
         display: none !important;
     }
+    .parent {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .country {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 @font-face {
     font-family: 'Varera Round';
-    /* src: local('Varera Round'), url(https://fonts.googleapis.com/css?family=Varela+Round) format('truetype'); */
     font-family: 'Codystar';
-    /* src: local('Codystar'), url(https://fonts.googleapis.com/css?family=Codystar) format('truetype'); */
 }
 
 html {
@@ -81,6 +90,7 @@ p {
 
 a {
     text-decoration: none;
+    color: #fff
 }
 
 #logo {
@@ -274,7 +284,7 @@ a {
     max-width: 390px;
     /*最大幅（調整してください）*/
     height: 100%;
-    background: #fff;
+    background: #333;
     /*背景色*/
     transition: .3s ease-in-out;
     /*滑らかに表示*/
@@ -285,8 +295,10 @@ a {
 
 #nav-content-text {
     text-align: center;
-    font-size: 24px;
-    margin: 20px 0;
+    font-size: 16px;
+    margin: 40px 20px;
+    font-family: 'Codystar', cursive;
+    text-decoration: none;
 }
 
 /*チェックが入ったらもろもろ表示*/
@@ -304,11 +316,19 @@ a {
     box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
 }
 
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .modal>label {
-    background: #FFD300;
-    color: #000;
+    border: #fff solid 2px;
+    background: #141611;
+    color: #fff;
     cursor: pointer;
     display: inline-block;
+    padding: 20px
 }
 
 .modal-overlay {
