@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>WATARU SATO</title>
+    <link rel="shortcut icon" href="image/logo.ico" type="image/logo.icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="scrollreveal.min.js"></script>
@@ -18,13 +19,13 @@
                 <a href="#">HOME</a>
             </li>
             <li>
-                <a href="#">ABOUT</a>
+                <a href="#about">ABOUT</a>
             </li>
             <li>
-                <a href="#">WORKS</a>
+                <a href="#works">WORKS</a>
             </li>
             <li>
-                <a href="#">CONTACT</a>
+                <a href="#contact">CONTACT</a>
             </li>
         </ul>
         <div id="nav-drawer">
@@ -39,15 +40,15 @@
                     <br>
                 </div>
                 <div id="nav-content-text">
-                    <a href="#">ABOUT</a>
+                    <a href="#about">ABOUT</a>
                     <br>
                 </div>
                 <div id="nav-content-text">
-                    <a href="#">WORKS</a>
+                    <a href="#works">WORKS</a>
                     <br>
                 </div>
                 <div id="nav-content-text">
-                    <a href="#">CONTACT</a>
+                    <a href="#contact">CONTACT</a>
                     <br>
                 </div>
 
@@ -57,8 +58,8 @@
     <div class="box_top top_img">
         <h1>Hello, I'm a front-end developer</h1>
     </div>
-    <div>
-        <h2>about</h2>
+    <div id="about" class="anchor_about">
+        <h2 class="margin_top">about</h2>
         <div>
             <div>
                 <p>
@@ -83,63 +84,150 @@
 
         </div>
     </div>
+    <div class="border"></div>
+    <div id="works" class="anchor_works">
+        <h2>works</h2>
+        <div class="flex_row_sa">
+            <div class="flex_col_c">
+                <img src="image/japan.png" alt="jp" class="flag_img">
+                <div class="flex_center_jp">
+                    <div class="flex_center">
+                        <div class="image_box">
+                            <div class="lms_img_blur animate">
+                                <img src="image/lms.jpg" alt="lms" class="works_img animate">
+                            </div>
+                            <label for="lms-trigger">
+                                Learning
+                                <br>Management
+                                <br>System
+                            </label>
+                        </div>
+                        <input id="lms-trigger" type="checkbox">
+                        <div class="lms-overlay">
+                            <div class="lms-wrap">
+                                <label for="lms-trigger">✖</label>
+                                <h1>Learning Management System</h1>
+                                <!-- <h3 class="white">Technique</h3> -->
 
+                                <!-- <h3 class="white">Overviews</h3> -->
+                                <p class="works">This system was created for an University.
+                                    <br> It allows students to
+                                    <br> - submit a report and take quizzes
+                                    <br> - design their own class schedule
+                                    <br> - obtain and visualize teacher reports
+                                    <br>
+                                    <br> and also, teachers can
+                                    <br> - design a report for every student
+                                    <br> - plan the classes, quizzes and exams
+                                    <br> - consolidate a report for the students
+                                </p>
 
-    <div>
-        <h2>work</h2>
-        <div class="parent">
-            <div class="country">
-                <h3>Japan</h3>
-                <div class="modal">
-                    <input id="modal-trigger" type="checkbox">
-                    <label for="modal-trigger">Learning Management System</label>
-                    <div class="modal-overlay">
-                        <div class="modal-wrap">
-                            <label for="modal-trigger">✖</label>
-                            <h4>ポップアップ・ウィンドウ・タイトル</h4>
-                            <p>コンテンツ</p>
+                                <img src="image/html.png" alt="" class="tech_icon hvr-wobble-vertical">
+                                <img src="image/css.png" alt="" class="tech_icon hvr-wobble-vertical">
+                                <img src="image/js.png" alt="" class="tech_icon hvr-wobble-vertical">
+                                <img src="image/unix.png" alt="" class="tech_icon hvr-wobble-vertical">
+                                <img src="image/php.png" alt="" class="tech_icon hvr-wobble-vertical">
+                                <img src="image/sql.png" alt="" class="tech_icon hvr-wobble-vertical">
+                            </div>
                         </div>
                     </div>
-                    <!-- </div> -->
-                    <!-- <div class="modal"> -->
-                    <input id="modal-trigger" type="checkbox">
-                    <label for="modal-trigger">Customer Management System</label>
-                    <div class="modal-overlay">
-                        <div class="modal-wrap">
-                            <label for="modal-trigger">✖</label>
-                            <h4>ポップアップ・ウィンドウ・タイトル</h4>
-                            <p>コンテンツ</p>
+
+
+
+                    <div class="flex_center">
+                        <div class="image_box">
+                            <div class="cis_img_blur animate">
+                                <img src="image/cis.jpg" alt="cis" class="works_img animate">
+                            </div>
+                            <label for="cis-trigger">
+                                Customer
+                                <br>Information
+                                <br> System
+                            </label>
+                        </div>
+                        <input id="cis-trigger" type="checkbox">
+                        <div class="cis-overlay">
+                            <div class="cis-wrap">
+                                <label for="cis-trigger">✖</label>
+                                <h1>Customer Information System</h1>
+                                <p class="works">Development and maintenance of a customer management system for an electric power company.
+                                    <br> It allows user to create, view, edit, delete information of customers who are under
+                                    contract.
+                                    <br> And also, it can link with other devices to obtain information of usages, fees and payment
+                                    status.
+                                    <br> I was responsible for the design, migration of data and testing plan for the data migration
+                                    system.
+                                </p>
+                                <img src="image/sqlserver.png" alt="" class="tech_icon hvr-wobble-vertical">
+                                <img src="image/tsql.png" alt="" class="tech_icon hvr-wobble-vertical">
+                                <img src="image/vba.png" alt="" class="tech_icon hvr-wobble-vertical">
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
 
-            <div class="country">
-                <h3>Canada</h3>
-                <div class="modal">
-                    <input id="modal-trigger" type="checkbox">
-                    <label for="modal-trigger">Co-Op Management Software</label>
-                    <div class="modal-overlay">
-                        <div class="modal-wrap">
-                            <label for="modal-trigger">✖</label>
-                            <h4>ポップアップ・ウィンドウ・タイトル</h4>
-                            <p>コンテンツ</p>
+            <div class="flex_col_c">
+                <img src="image/canada.png" alt="ca" class="flag_img">
+                <div class="flex_center_ca">
+                    <div class="flex_center">
+                        <div class="image_box">
+                            <div class="coop_img_blur animate">
+                                <img src="image/coop.jpg" alt="coop" class="works_img animate">
+                            </div>
+                            <label for="coop-trigger">Co-Op
+                                <br>Management
+                                <br>System
+                            </label>
+                        </div>
+                        <input id="coop-trigger" type="checkbox">
+                        <div class="coop-overlay">
+                            <div class="coop-wrap">
+                                <label for="coop-trigger">✖</label>
+                                <h1>Co-Op Management System</h1>
+                                <p class="works">Development Co-Op Management Software which is called Work Link.
+                                    <br> It allows to connect the students and the school with the co-op process and I designed
+                                    and implemented a user-facing interfaces using Vue.js and the MVVM design pattern.
+                                    <br> And participating in an Agile team during the planning of the project and the design
+                                    of the interface.
+                                </p>
+
+                                <img src="image/html.png" alt="" class="tech_icon hvr-wobble-vertical">
+                                <img src="image/css.png" alt="" class="tech_icon hvr-wobble-vertical">
+                                <img src="image/vue.png" alt="" class="tech_icon hvr-wobble-vertical">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div>
+    <div class="border"></div>
+    <div id="contact">
         <h2>contact</h2>
-        <p>aaa</p>
-        <p>bbb</p>
+        <h4>wataru.sato.06@gmail.com</h4>
+        <div class="center">
+            <a href="https://github.com/wtrst">
+                <img src="image/github.png" alt="" class="sns_img">
+            </a>
+            <a href="https://www.linkedin.com/in/wataru-sato/">
+                <img src="image/linkedin.png" alt="" class="sns_img">
+            </a>
+            <a href="https://angel.co/wataru-sato">
+                <img src="image/angel.png" alt="" class="sns_img">
+            </a>
+        </div>
+        <p class="center">Why don't you say "Hello!" to me?</p>
     </div>
     <script type="text/javascript">
         window.sr = ScrollReveal();
         sr.reveal('.animate');
     </script>
 </body>
+<footer class="center">
+    Copyright © 2018 Wataru Sato / Front-End Developer
+</footer>
 
 
 </html>
