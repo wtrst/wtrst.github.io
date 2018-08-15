@@ -30,6 +30,25 @@
     .lms-wrap>img {
         height: 40px;
     }
+    .profile_img {
+        min-width: 100vw;
+    }
+    .flex_col_c {
+        text-align: center;
+    }
+    .flex_col_c:last-child {
+        margin-top: 30px;
+    }
+    .anchor_about {
+        display: block;
+        padding-top: 75px;
+        margin-top: -55px;
+    }
+    .anchor_works {
+        display: block;
+        padding-top: 110px;
+        margin-top: -110px;
+    }
 }
 
 @media screen and (min-width:760px) {
