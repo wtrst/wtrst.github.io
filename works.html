@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WATARU SATO</title>
+    <link rel="shortcut icon" href="image/logo.ico" type="image/logo.icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Codystar|Varela" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <script src="scrollreveal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="t.min.js"></script>
+</head>
+
+<body>
+    <div class="menu_bar">
+        <img src="image/logo.png" alt="LOGO" id="logo">
+        <!-- menu for PC -->
+        <ul class="menu container topBotomBordersOut">
+            <li>
+                <a href="index.html">HOME</a>
+            </li>
+            <li>
+                <a href="aboutme.html">ABOUT</a>
+            </li>
+            <li>
+                <a href="works.html" style="color:#00b894;">WORKS</a>
+            </li>
+            <li>
+                <a href="resume.html">RESUME</a>
+            </li>
+        </ul>
+        <!-- menu for mobile -->
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input">
+                <span></span>
+            </label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <div class="nav-content-text">
+                    <a href="index.html">HOME</a>
+                    <br>
+                </div>
+                <div class="nav-content-text">
+                    <a href="aboutme.html">ABOUT</a>
+                    <br>
+                </div>
+                <div class="nav-content-text">
+                    <a href="works.html" style="color:#00b894;">WORKS</a>
+                    <br>
+                </div>
+                <div class="nav-content-text">
+                    <a href="resume.html">RESUME</a>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="works_body">
+
+
+
+        <div style="text-align: center;">
+            <img src="image/japan.png" alt="jp" class="flag_img">
+        </div>
+        <div class="works_flex">
+            <div class="work_card">
+                <img src="image/lms.jpg" alt="lms" class="animate" />
+                <div class="mask">
+                    <div class="caption">Learning Management System</div>
+                    <label for="lms-trigger">
+                        view more
+                    </label>
+                </div>
+                <input id="lms-trigger" type="checkbox">
+                <div class="popup-overlay">
+                    <div class="popup-wrap">
+                        <h1>Learning Management System</h1>
+                        <div class="popup-body">
+                            <div class="popup-text-lms">
+                                <p>This system was created for a university and to enable professors and students to have a
+                                    communication strongly and easily. Wherever they are, they can access to this system
+                                    from their PC or phone, check a latest information and take some actions immediately,
+                                    that must help students to study efficiently.
+                                </p>
+                                <p>
+                                    We narrowed down functions and implement essential things to use more comfortably by researching with university.
+                                </p>
+                                <p>It allow professors to:</p>
+                                <ul>
+                                    <li>Plan and make class schedule.</li>
+                                    <li>Distribute the documents, quizzes and assignments to students.</li>
+                                    <li>Mark quizzes and report.</li>
+                                    <li>Inform students something about class.</li>
+                                </ul>
+                                <p>It also students to:</p>
+                                <ul>
+                                    <li>Make and manage personal schedule.</li>
+                                    <li>Take quizzes and submit report.</li>
+                                    <li>Post on a message board to ask questions or give opinions.</li>
+                                    <li>Check the learning state of themselves and comments by professors.</li>
+                                </ul>
+                                <br/>
+                                <p>This was the project that I had the responsibility of design and implementation as a
+                                    <span>Full-Stack Developer</span> at
+                                    <span>CMC Solutions Inc.</span>, a Japanese IT company where I worked for over 3 years.</p>
+                            </div>
+                        </div>
+
+                        <div class="skills-text">
+                            <h5>HTML/CSS | JavaScript | Unix | PHP | PostgreSQL</h5>
+                        </div>
+                        <label for="lms-trigger">
+                            back
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="work_card">
+                <img src="image/cis.jpg" alt="cis" class="animate" />
+                <div class="mask">
+                    <div class="caption">Customer Information System</div>
+                    <label for="cis-trigger">
+                        view more
+                    </label>
+                </div>
+                <input id="cis-trigger" type="checkbox">
+                <div class="popup-overlay">
+                    <div class="popup-wrap">
+                        <h1>Customer Information System</h1>
+                        <div class="popup-body">
+                            <div class="popup-text-cis">
+                                <p>This system was new system for management customer informations of Electrical Safety Services
+                                    Foundation. Our client which is Electrical Safety Services Foundation had an another
+                                    system to store their customer informations, they decided to replace it with this new
+                                    system.
+                                </p>
+                                <p>
+                                    It enable users to handle customer information itself such as name, address and link with other devices to obtain information
+                                    of usages, fees and payment status.
+                                </p>
+                                <p>
+                                    As a Data Analyst, I was responsible for the design, implementation
+                                    <span>Transuct-SQL</span> with Microsoft SQL Server to migrate data from previous system, and
+                                    I worked on site at the client’s office as a staff of
+                                    <span>CMC Solutions Inc.</span>, a Japanese IT company where I worked for over 3 years.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="skills-text">
+                            <h5>Microsoft SQL Server | Transact-SQL</h5>
+                        </div>
+                        <label for="cis-trigger">
+                            back
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center;;">
+            <img src="image/canada.png" alt="jp" class="flag_img">
+        </div>
+        <div class="works_flex">
+            <div class="work_card">
+                <img src="image/worklink.png" alt="coop" class="animate" />
+                <div class="mask">
+                    <div class="caption">WorkLink</div>
+                    <label for="coop-trigger">
+                        view more
+                    </label>
+                </div>
+                <input id="coop-trigger" type="checkbox">
+                <div class="popup-overlay">
+                    <div class="popup-wrap">
+                        <h1>WorkLink</h1>
+                        <div class="popup-body">
+                            <div class="popup-text-coop">
+                                <p>
+                                    This system was developed for Cornerstone International Community College of Canada where I studied, and
+                                    <span>Co-Op Management Software
+                                    </span> which allows to connect the students and the school with the
+                                    <span>Co-Op</span> process. School can handle various information about students on
+                                    <span>Co-Op</span> process such as company where they work, work hours, their position that
+                                    school used to manage on bunch of papers, it must help school to manage students status
+                                    easily and efficiently.
+                                </p>
+                                <p>
+                                    I joined this Agile project at my college as a volunteer and I had responsibility of design and implementation a user interfaces
+                                    using Vue.js and the MVVM design pattern as a Front-End Developer.
+                                </p>
+                            </div>
+                            <hr/>
+                            <div class="popup-img-coop">
+                                <a href="image/worklink1.png" target="_blank">
+                                    <img src="image/worklink1.png" alt="worklink1" />
+                                </a>
+                                <a href="image/worklink2.png" target="_blank">
+                                    <img src="image/worklink2.png" alt="worklink2" />
+                                </a>
+                                <a href="image/worklink3.png" target="_blank">
+                                    <img src="image/worklink3.png" alt="worklink3" />
+                                </a>
+                                <a href="image/worklink4.png" target="_blank">
+                                    <img src="image/worklink4.png" alt="worklink4" />
+                                </a>
+                                <a href="image/worklink5.png" target="_blank">
+                                    <img src="image/worklink5.png" alt="worklink5" />
+                                </a>
+                                <a href="image/worklink6.png" target="_blank">
+                                    <img src="image/worklink6.png" alt="worklink6" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="skills-text">
+                            <h5>HTML/CSS | Vue.js | Git | Docker</h5>
+                        </div>
+                        <label for="coop-trigger">
+                            back
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="work_card">
+                <img src="image/android.png" alt="android" class="animate" />
+                <div class="mask">
+                    <div class="caption">MEAMO</div>
+                    <label for="meamo-trigger">
+                        view more
+                    </label>
+                </div>
+                <input id="meamo-trigger" type="checkbox">
+                <div class="popup-overlay">
+                    <div class="popup-wrap">
+                        <h1>MEAMO</h1>
+                        <div class="popup-body">
+                            <div class="popup-text-meamo">
+                                <p>
+                                    This Android application was the one that I created with Java and Google APIs in my class during studying at Cornerstone
+                                    International Community College of Canada.
+                                </p>
+                                <p>When I go to restaurant, bar or cafe, I try to order the food and the drink that I ordered
+                                    last time, but I often forget a name of them even if those were really good. Sometimes
+                                    even the location…
+                                </p>
+                                <p>
+                                    That’s why I decided to create this application to avoid that situation.
+                                    <br/> I can make a memo about the restaurant with:
+                                </p>
+                                <ul>
+                                    <li>Category (e.g. Bar, Dinner, Cafe, FastFood)</li>
+                                    <li>Name</li>
+                                    <li>Rating for each category (e.g. Food, Drink, CP which means Cost Performance)</li>
+                                    <li>Location</li>
+                                    <li>Text memo</li>
+                                    <li>Visit date</li>
+                                    <li>Photo</li>
+                                </ul>
+                                <p>
+                                    It could help someone like me to order their favorite food!
+                                </p>
+                            </div>
+                            <hr/>
+                            <div class="popup-img-meamo">
+                                <a href="image/meamo1.gif" target="_blank">
+                                    <img src="image/meamo1.gif" alt="meamo1" />
+                                </a>
+                                <a href="image/meamo2.gif" target="_blank">
+                                    <img src="image/meamo2.gif" alt="meamo2" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="skills-text">
+                            <h5>Java | Google APIs </h5>
+                        </div>
+                        <div>
+                            <a href="https://github.com/wtrst/MEAMO" target="_blank">
+                                <i class="fab fa-github-square sns_text"></i>
+                            </a>
+                        </div>
+                        <label for="meamo-trigger">
+                            back
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="work_card">
+                <img src="image/LR.png" alt="lr" class="animate" />
+                <div class="mask">
+                    <div class="caption">LR</div>
+                    <label for="lr-trigger">
+                        view more
+                    </label>
+                </div>
+                <input id="lr-trigger" type="checkbox">
+                <div class="popup-overlay">
+                    <div class="popup-wrap">
+                        <h1>LR</h1>
+                        <div class="popup-body">
+                            <div class="popup-text-lr">
+                                <p>
+                                    I created this iOS application with Swift and SpriteKit in my class during studying at Cornerstone International Community
+                                    College of Canada.
+                                </p>
+                                <p>It is king of puzzle game and its rule is simple.</p>
+                                <ul>
+                                    <li>
+                                        2 characters ("L" and "R") are falling from top to down, and those characters have 2 colors (Red and Black).
+                                    </li>
+                                    <li>
+                                        Black : Swipe to the direction that the character represents. (e.g., If “R” is falling down, swipe RIGHT)
+                                    </li>
+                                    <li>
+                                        Red : Swipe to the direction which lane the character is on.
+                                    </li>
+                                </ul>
+                                <p>If you swipe to wrong direction, or character disappear before you do, it's GAME OVER!</p>
+                                <p>It might be more difficult that you think…</p>
+                            </div>
+                            <hr/>
+                            <div class="popup-img-lr">
+                                <a href="image/LR_play.gif" target="_blank">
+                                    <img src="image/LR_play.gif" alt="lr_play" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="skills-text">
+                            <h5>Swift | SpriteKit </h5>
+                        </div>
+                        <div>
+                            <a href="https://github.com/wtrst/LR" target="_blank">
+                                <i class="fab fa-github-square sns_text"></i>
+                            </a>
+                        </div>
+                        <label for="lr-trigger">
+                            back
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="work_card">
+                <img src="image/react.png" alt="react" class="animate" />
+                <div class="mask">
+                    <div class="caption">React Portfolio Web Site</div>
+                    <label for="react-trigger">
+                        view more
+                    </label>
+                </div>
+                <input id="react-trigger" type="checkbox">
+                <div class="popup-overlay">
+                    <div class="popup-wrap">
+                        <h1>React Portfolio Web Site</h1>
+                        <div class="popup-body">
+                            <div class="popup-text-react">
+                                <p>
+                                    This was my personal project for creating sample portfolio web site to learn React which is JavaScript library for building
+                                    user interfaces.
+                                </p>
+                                <p>
+                                    I mainly used Create React App to set up React environment and React-MDL for material design. It was very first time for
+                                    me to learn React, I just created simple and easy one , but I make sure that I will study
+                                    more and more, create more complex and cool application with React!
+                                </p>
+                            </div>
+                            <hr/>
+                            <div class="popup-img-react">
+                                <a href="image/react_pf1.png" target="_blank">
+                                    <img src="image/react_pf1.png" alt="react1" />
+                                </a>
+                                <a href="image/react_pf2.png" target="_blank">
+                                    <img src="image/react_pf2.png" alt="react2" />
+                                </a>
+                                <a href="image/react_pf3.png" target="_blank">
+                                    <img src="image/react_pf3.png" alt="react3" />
+                                </a>
+                                <a href="image/react_pf4.png" target="_blank">
+                                    <img src="image/react_pf4.png" alt="react4" />
+                                </a>
+                                <a href="image/react_pf5.png" target="_blank">
+                                    <img src="image/react_pf5.png" alt="react5" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="skills-text">
+                            <h5>HTML/CSS | React </h5>
+                        </div>
+                        <label for="react-trigger">
+                            back
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        window.sr = ScrollReveal();
+        sr.reveal('.animate');
+    </script>
+</body>
+<footer class="center">Copyright © 2018 Wataru Sato / Front-End Developer</footer>
+
+
+</html>
