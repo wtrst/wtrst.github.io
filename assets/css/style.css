@@ -8,12 +8,12 @@ del {
 html {
     font-family: 'Varela', sans-serif;
     font-size: 16px;
+    min-height: 100%;
     position: relative;
 }
 
 body {
     width: 100%;
-    min-height: 100%;
     margin: 0px;
     background-color: #E7E6E4
 }
