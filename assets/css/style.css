@@ -184,7 +184,7 @@ span {
 /* landing page */
 
 .landingpage {
-    background-image: url(image/top.jpg);
+    background-image: url(../image/top.jpg);
     min-width: 100vw;
     min-height: 100vh;
     background-size: cover;
