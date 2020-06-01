@@ -45,6 +45,10 @@ span {
     margin: 15px 20px
 }
 
+.mgv-40 {
+    margin: 40px 0px !important;
+}
+
 /* menu bar (header) */
 
 /* for PC */
@@ -227,8 +231,8 @@ span {
 
 .aboutme_body {
     width: 100%;
-    height: 100%;
-    padding: 110px 0 50px 0;
+    height: auto;
+    padding: 90px 0 70px 0;
     text-align: center;
 }
 
@@ -236,7 +240,7 @@ span {
     border: none;
     border-right: 3px dotted #E4671E;
     /* height: 50vh; */
-    margin: 40px 0;
+    /* margin: 40px 0; */
 }
 
 .aboutme_text {
@@ -613,21 +617,25 @@ input:checked~.popup-overlay {
         display: none !important;
     }
     .aboutme_body {
-        width: 65%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
+        width: 80%;
         margin: 0 auto;
         text-align: center
+    }
+    .aboutme_flex {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 0 auto;
     }
     .aboutme_text {
         width: 50%;
         margin: 25px auto;
+        /* padding: 0px 20px */
     }
     .aboutme_img {
-        width: 40%;
-        height: 40%;
+        width: 300px;
+        height: auto;
         margin: 40px auto;
     }
     .works_flex {
